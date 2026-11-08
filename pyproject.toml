@@ -1,0 +1,32 @@
+[project]
+name = "polarsformacion"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Benito Cuezva Rubio", email = "benito.cuezva@belerofontech.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "dbc>=0.3.1",
+    "duckdb>=2.0.0",
+    "duckdb-engine>=0.17.0",
+    "functime[llm,xgb]>=1.0.0",
+    "ipython>=9.18.1",
+    "jupyter>=1.1.1",
+    "nbformat>=5.11.1",
+    "plotly>=7.1.0",
+    "polars[all]>=2.1.0",
+    "pyodbc>=5.5.0",
+    "requests>=2.34.2",
+    "ruff>=0.17.4",
+    "sqlalchemy[mssql-python]>=2.1",
+    "statsmodels>=0.15.0",
+]
+
+[project.scripts]
+polarsformacion = "polarsformacion:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
